@@ -1,0 +1,5 @@
+# Скрипт gradlew должен всегда иметь окончания строк LF, иначе он не запустится на Linux и macOS
+gradlew text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jar binary
