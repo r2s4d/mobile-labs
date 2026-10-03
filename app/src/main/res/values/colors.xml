@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Цвета совпадают с переменными color/* в макете Figma -->
+<resources>
+    <color name="bg">#0F1115</color>
+    <color name="surface">#1A1D24</color>
+    <color name="surface_2">#232832</color>
+    <color name="accent">#76B900</color>
+    <color name="on_accent">#0F1115</color>
+    <color name="text">#F2F4F8</color>
+    <color name="text_secondary">#9AA3B2</color>
+    <color name="divider">#2A2F3A</color>
+    <color name="danger">#FF5A5F</color>
+</resources>

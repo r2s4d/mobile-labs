@@ -1,0 +1,12 @@
+# Gradle и сборка
+.gradle/
+build/
+*.apk
+*.aab
+
+# Локальные настройки (путь к SDK у каждого свой)
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/

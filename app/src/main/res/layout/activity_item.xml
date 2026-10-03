@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Карточка видеокарты: прокручиваемое содержимое и две кнопки закреплены внизу -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.GpuStore.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/item_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.GpuStore.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="216dp"
+                    android:layout_height="138dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="@string/cd_card_image" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/accent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Таблица характеристик: подпись слева, значение справа -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/SpecRow">
+                    <TextView
+                        style="@style/SpecLabel"
+                        android:text="@string/item_brand" />
+                    <TextView
+                        android:id="@+id/valueBrand"
+                        style="@style/SpecValue" />
+                </LinearLayout>
+                <View style="@style/SpecDivider" />
+
+                <LinearLayout style="@style/SpecRow">
+                    <TextView
+                        style="@style/SpecLabel"
+                        android:text="@string/item_memory" />
+                    <TextView
+                        android:id="@+id/valueMemory"
+                        style="@style/SpecValue" />
+                </LinearLayout>
+                <View style="@style/SpecDivider" />
+
+                <LinearLayout style="@style/SpecRow">
+                    <TextView
+                        style="@style/SpecLabel"
+                        android:text="@string/item_memory_type" />
+                    <TextView
+                        android:id="@+id/valueMemoryType"
+                        style="@style/SpecValue" />
+                </LinearLayout>
+                <View style="@style/SpecDivider" />
+
+                <LinearLayout style="@style/SpecRow">
+                    <TextView
+                        style="@style/SpecLabel"
+                        android:text="@string/item_bus" />
+                    <TextView
+                        android:id="@+id/valueBus"
+                        style="@style/SpecValue" />
+                </LinearLayout>
+                <View style="@style/SpecDivider" />
+
+                <LinearLayout style="@style/SpecRow">
+                    <TextView
+                        style="@style/SpecLabel"
+                        android:text="@string/item_power" />
+                    <TextView
+                        android:id="@+id/valuePower"
+                        style="@style/SpecValue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/Text.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="3dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Кнопки действий внизу экрана -->
+    <LinearLayout
+        android:id="@+id/actionsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCart"
+            style="@style/Widget.GpuStore.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="@string/item_add_to_cart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonFavorite"
+            style="@style/Widget.GpuStore.Button.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:text="@string/item_add_favorite"
+            app:icon="@drawable/ic_heart"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+</LinearLayout>

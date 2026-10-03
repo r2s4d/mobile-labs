@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Экран "О себе": аватар, имя и таблица с информацией -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.GpuStore.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/about_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_avatar"
+                android:gravity="center"
+                android:text="@string/about_initials"
+                android:textColor="@color/on_accent"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/about_name"
+                android:textColor="@color/text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/about_role"
+                android:textSize="15sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.GpuStore.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:clickable="false"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="6dp">
+
+                    <LinearLayout style="@style/SpecRow">
+                        <TextView
+                            style="@style/SpecLabel"
+                            android:text="@string/about_subject_label" />
+                        <TextView
+                            style="@style/SpecValue"
+                            android:text="@string/about_subject" />
+                    </LinearLayout>
+                    <View style="@style/SpecDivider" />
+
+                    <LinearLayout style="@style/SpecRow">
+                        <TextView
+                            style="@style/SpecLabel"
+                            android:text="@string/about_labs_label" />
+                        <TextView
+                            style="@style/SpecValue"
+                            android:text="@string/about_labs" />
+                    </LinearLayout>
+                    <View style="@style/SpecDivider" />
+
+                    <LinearLayout style="@style/SpecRow">
+                        <TextView
+                            style="@style/SpecLabel"
+                            android:text="@string/about_github_label" />
+                        <TextView
+                            style="@style/SpecValue"
+                            android:text="@string/about_github" />
+                    </LinearLayout>
+                    <View style="@style/SpecDivider" />
+
+                    <LinearLayout style="@style/SpecRow">
+                        <TextView
+                            style="@style/SpecLabel"
+                            android:text="@string/about_version_label" />
+                        <TextView
+                            style="@style/SpecValue"
+                            android:text="@string/about_version" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

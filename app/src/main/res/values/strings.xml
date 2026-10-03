@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPU Store</string>
+
+    <!-- Главное меню -->
+    <string name="menu_title">GPU Store</string>
+    <string name="menu_subtitle">Магазин видеокарт</string>
+    <string name="menu_catalog">Каталог</string>
+    <string name="menu_catalog_sub">Все видеокарты в наличии</string>
+    <string name="menu_cart">Корзина и избранное</string>
+    <string name="menu_cart_empty">Корзина пуста</string>
+    <string name="menu_cart_count">Товаров в корзине: %1$d</string>
+    <string name="menu_about">О себе</string>
+    <string name="menu_about_sub">Автор приложения</string>
+
+    <!-- Каталог -->
+    <string name="catalog_title">Каталог</string>
+    <string name="catalog_search_hint">Поиск видеокарты</string>
+    <string name="catalog_empty">Ничего не найдено</string>
+
+    <!-- Карточка товара -->
+    <string name="item_title">Видеокарта</string>
+    <string name="item_brand">Производитель</string>
+    <string name="item_memory">Видеопамять</string>
+    <string name="item_memory_type">Тип памяти</string>
+    <string name="item_bus">Шина памяти</string>
+    <string name="item_power">Энергопотребление</string>
+    <string name="item_gb">%1$d ГБ</string>
+    <string name="item_bits">%1$d бит</string>
+    <string name="item_watts">%1$d Вт</string>
+    <string name="item_add_to_cart">В корзину</string>
+    <string name="item_in_cart">В корзине: %1$d</string>
+    <string name="item_add_favorite">В избранное</string>
+    <string name="item_remove_favorite">В избранном</string>
+    <string name="item_added_to_cart">Добавлено в корзину</string>
+    <string name="item_open_cart">Открыть</string>
+
+    <!-- Корзина и избранное -->
+    <string name="cart_title">Корзина</string>
+    <string name="tab_cart">Корзина</string>
+    <string name="tab_favorites">Избранное</string>
+    <string name="cart_empty">Корзина пуста. Добавьте видеокарты из каталога.</string>
+    <string name="favorites_empty">В избранном пока ничего нет</string>
+    <string name="cart_total">Итого</string>
+    <string name="checkout">Оформить заказ</string>
+    <string name="checkout_title">Оформить заказ?</string>
+    <string name="checkout_message">Сумма заказа: %1$s</string>
+    <string name="checkout_confirm">Оформить</string>
+    <string name="checkout_done">Заказ оформлен, спасибо за покупку</string>
+    <string name="cancel">Отмена</string>
+    <string name="cd_remove">Удалить</string>
+    <string name="cd_increase">Увеличить количество</string>
+    <string name="cd_decrease">Уменьшить количество</string>
+    <string name="cd_remove_favorite">Убрать из избранного</string>
+    <string name="cd_search">Поиск</string>
+    <string name="cd_card_image">Изображение видеокарты</string>
+
+    <!-- О себе. Измените значения на свои данные -->
+    <string name="about_title">О себе</string>
+    <string name="about_initials">ЕР</string>
+    <string name="about_name">Егор Рассадин</string>
+    <string name="about_role">Студент</string>
+    <string name="about_subject_label">Дисциплина</string>
+    <string name="about_subject">Мобильные приложения</string>
+    <string name="about_labs_label">Лабораторные</string>
+    <string name="about_labs">№1 Figma, №2 Kotlin</string>
+    <string name="about_github_label">GitHub</string>
+    <string name="about_github">r2s4d/mobile-labs</string>
+    <string name="about_version_label">Версия</string>
+    <string name="about_version">1.0</string>
+</resources>

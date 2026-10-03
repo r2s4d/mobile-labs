@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Фон вкладки: у выбранной зеленая скругленная плашка, у остальных прозрачный -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <inset
+            android:insetBottom="4dp"
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:insetTop="4dp">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/accent" />
+                <corners android:radius="11dp" />
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>
